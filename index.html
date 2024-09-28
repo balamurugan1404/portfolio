@@ -37,7 +37,7 @@
 
 
             <div class="home-images">
-                <div class="home-image-container"> <img src="./assets/image/Image-1.jpg" class="home-image"
+                <div class="home-image-container"> <img src="./assets/image/home_image.jpg" class="home-image"
                         alt="home-image"></div>
             </div>
 
@@ -53,7 +53,7 @@
             </div>
             <div class="aboutme-image">
 
-                <img src="./assets/image/Image-2.jpg" class="about-image" alt="my-image">
+                <img src="./assets/image/profile_image.jpg" class="about-image" alt="my-image">
             </div>
         </section>
 
@@ -64,28 +64,28 @@
             <div class="skills-box-container">
                 <div class="skills-box1">
                     <h2 class="skills-box-html">HTML</h2>
-                    <img src="./assets/image/Image-3.jpg" alt="html" class="htmlimage">
+                    <img src="./assets/image/html_image.jpg" alt="html" class="htmlimage">
                     <div class="html-progress-container">
                         <div class="html-progress-bar"></div>
                        
                     </div>
-                    <a href="https://balamurugan0425.github.io/html---website/" target="_blank">Project 1</a><a href="" target="_blank">Project 2</a>
+                    
                     
                 </div>
 
                 <div class="skills-box2">
                     <h2 class="skills-box-css">CSS</h2>
-                    <img src="./assets/image/Image-4.png" alt="cssimage" class="cssimage">
+                    <img src="./assets/image/css_image.png" alt="cssimage" class="cssimage">
                     <div class="css-progress-container">
                         <div class="css-progress-bar"></div>
                     </div>
-                    <!-- <div><a href="https://balamurugan0425.github.io/css-layout/" target="_blank">Project 1</a><a href="https://balamurugan0425.github.io/CSS-Singlepage-website/" target="_blank">Project 2</a></div> -->
+                   
                    
                 </div>
 
                 <div class="skills-box3">
                     <h2 class="skills-box-js">JavaScript</h2>
-                    <img src="./assets/image/Image-5.png" alt="js" class="jsimage">
+                    <img src="./assets/image/js_image.png" alt="js" class="jsimage">
                     <div class="js-progress-container">
                         <div class="js-progress-bar"></div>
                     
@@ -98,12 +98,15 @@
         <section class="contact-main" id="contact">
             <div class="contact-form">
 
-                <form action="" class="form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                    <input type="hidden" name="access_key" value="db87623e-e10f-4b0e-8319-7f7878efd2a0">
+
+
 
                     <p class="sendmessage">Send Message</p>
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" required placeholder="Enter your mail">
-                    <textarea placeholder="Type your thoughts"></textarea>
+                    <input type="text" placeholder="Enter your name" name="FullName">
+                    <input type="email" required placeholder="Enter your mail" name="email">
+                    <textarea placeholder="Type your thoughts" name="Message"></textarea>
                     <button type="submit">Send Message</button>
 
                 </form>
@@ -139,6 +142,9 @@
 
 
     </div>
+
+
+    <script src="./JavaScript/node.js"></script>
 </body>
 
 </html>
